@@ -1,0 +1,1485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube Clone</title>
+    <link rel="icon" href="https://cdn3.iconfinder.com/data/icons/social-network-30/512/social-06-512.png"
+        type="x-icon">
+    <style>
+    
+
+        @media (max-width:767px) {
+
+            body {
+                background-color: #3b3b3b;
+                padding: 0px;
+
+            }
+            footer{
+                width: 100%;
+                height: 60px;
+                background-color: #727272;
+            }
+            .wrapper {
+            width: 100%;
+            height: 2000px;
+            background-color: #0a0a0a;
+            /* display: flex; */
+        }
+
+       /* .menu-box-2 { */
+        /* width: 100%;
+        height: 69px;
+        background-color: #0a0a0a; */
+        /* margin-top: 1053px; */
+        /* position: fixed; */
+        /* position: absolute;
+        padding: 0px;
+        bottom: 0px;
+        display: flex;
+        justify-content: space-around; */
+    /* } */
+    .menu-box-2 {
+        width: 100%;
+        height: 69px;
+        background-color: #0a0a0a;
+        margin-top: 1053px;
+        position: fixed;
+        /* position: absolute; */
+        padding: 0px;
+        bottom: 0px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+            
+    .web-image-box-1 {
+
+width: 63px;
+height: 70px;
+
+border-radius: 7px;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+margin-bottom: 10px;
+transition: all 0.3s ease-in-out;
+
+}
+
+.web-image-box-1:hover {
+        background-color: #3b3b3b;
+        width: 50px;
+        height: 50px;
+        margin-top: 5px;
+        margin-left: 5px;
+    }
+
+.web-imgage-1 {
+width: 30px;
+margin-top: 19px;
+
+}
+
+
+    .web-image-box-1:hover {
+        background-color: #3b3b3b;
+        width: 50px;
+        height: 50px;
+        margin-top: 5px;
+        margin-left: 5px;
+    }
+.web-imgage-2 {
+width: 95px;
+margin-top: 30px;
+
+
+}
+.home {
+margin-top: 5px;
+font-family: monospace;
+color: aliceblue;
+}
+
+.shorts-name {
+
+color: aliceblue;
+font-family: monospace;
+transform: translateX(0px) translateY(-32px);
+}
+
+.subscriptions {
+color: aliceblue;
+margin-top: 3px;
+font-size: 10px;
+}
+/* .voide-menager-box {
+            width: 95%;
+            height: 350px;
+            background-color: #5985E1;
+            float: left;
+
+            margin-top: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 75px;
+            overflow: hidden;
+            position: absolute;
+            margin-left: 76px;
+        } */
+
+        .voide-box {
+            width: 100%;
+            height: 350px;
+            margin-top: 80px;
+            /* background-color: cadetblue; */
+        }
+
+        .vidio-box-vidio {
+            width: 100%;
+            height: 257px;
+            /* background-color: #15223d; */
+        }
+
+        .box-teax {
+            width: 100%;
+            height: 93px;
+            /* background-color: burlywood; */
+        }
+
+        .sonal-maa {
+            width: 100%;
+            height: 257px;
+        }
+
+        .heding-vidio-teax {
+            margin-top: 0px;
+            margin-bottom: 0px;
+            font-size: 18px;
+            font-family: sans-serif;
+            font-weight: 600;
+            color: aliceblue;
+        }
+
+        .teax-vidio-teax {
+            font-family: system-ui;
+            color: #979797;
+        }
+
+
+        /* fdffffffffffffffff */
+
+
+
+
+        /* .voide-menager-box-2 {
+            width: 95%;
+            height: 350px;
+
+            float: left;
+            margin-top: 460px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 75px;
+            overflow: hidden;
+            position: absolute;
+            margin-left: 76px;
+        } */
+
+        .voide-box-2 {
+            width: 100%;
+            height: 350px;
+          
+
+        }
+
+        .vidio-box-vidio-2 {
+            width: 100%;
+            height: 257px;
+
+
+        }
+
+        .box-teax-2 {
+            width: 100%;
+            height: 93px;
+
+        }
+
+        .sonal-maa-2 {
+            width: 100%;
+            height: 257px;
+
+        }
+
+        .heding-vidio-teax-2 {
+            margin-top: 0px;
+            margin-bottom: 0px;
+            font-size: 18px;
+            font-family: sans-serif;
+            font-weight: 600;
+            color: aliceblue;
+        }
+       
+
+        .teax-vidio-teax-2 {
+            font-family: system-ui;
+            color: #979797;
+        }
+         /* jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj */
+        /* .voide-menager-box-3 {
+            width: 95%;
+            height: 350px;
+            float: left;
+            margin-top: 840px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 75px;
+            overflow: hidden;
+            position: absolute;
+            margin-left: 76px;
+        } */
+
+        .voide-box-3 {
+            width: 100%;
+            height: 350px;
+ 
+        }
+
+        .vidio-box-vidio-3 {
+            width: 100%;
+            height: 257px;
+
+
+        }
+
+        .box-teax-3 {
+            width: 100%;
+            height: 93px;
+
+        }
+
+        .sonal-maa-3 {
+            width: 100%;
+            height: 257px;
+
+        }
+
+        .heding-vidio-teax-3 {
+            margin-top: 0px;
+            margin-bottom: 0px;
+            font-size: 18px;
+            font-family: sans-serif;
+            font-weight: 600;
+            color: aliceblue;
+        }
+
+        .teax-vidio-teax-3 {
+            font-family: system-ui;
+            color: #979797;
+        }
+
+
+        /* 11111111111111111111111111111111111111111111111111111111111111 */
+
+
+
+
+        /* .voide-menager-box-4 {
+            width: 95%;
+            height: 350px;
+            float: left;
+            margin-top: 1224px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 75px;
+            overflow: hidden;
+            position: absolute;
+            margin-left: 76px;
+        } */
+
+        .voide-box-4 {
+            width: 100%;
+            height: 350px;
+         
+
+        }
+
+        .vidio-box-vidio-4 {
+            width: 100%;
+            height: 257px;
+
+
+        }
+
+        .box-teax-4 {
+            width: 100%;
+            height: 93px;
+
+        }
+
+        .sonal-maa-4 {
+            width: 100%;
+            height: 257px;
+
+        }
+
+        .heding-vidio-teax-4 {
+            margin-top: 0px;
+            margin-bottom: 0px;
+            font-size: 18px;
+            font-family: sans-serif;
+            font-weight: 600;
+            color: aliceblue;
+        }
+
+        .teax-vidio-teax-4 {
+            font-family: system-ui;
+            color: #979797;
+        }
+
+
+        /* 1111111111111111111111111111111111111111111111111111111111111111111 */
+
+
+
+        /* .voide-menager-box-5 {
+            width: 95%;
+            height: 350px;
+            float: left;
+            margin-top: 1604px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 75px;
+            overflow: hidden;
+            position: absolute;
+            margin-left: 76px;
+        } */
+
+        .voide-box-5 {
+            width: 100%;
+            height: 350px;
+         
+
+        }
+
+        .vidio-box-vidio-5 {
+            width: 100%;
+            height: 257px;
+
+
+        }
+
+        .box-teax-5 {
+            width: 100%;
+            height: 93px;
+
+        }
+
+        .sonal-maa-5 {
+            width: 100%;
+            height: 257px;
+
+        }
+
+        .heding-vidio-teax-5 {
+            margin-top: 0px;
+            margin-bottom: 0px;
+            font-size: 18px;
+            font-family: sans-serif;
+            font-weight: 600;
+            color: aliceblue;
+        }
+
+        .teax-vidio-teax-5 {
+            font-family: system-ui;
+            color: #979797;
+        }
+
+        }
+
+
+            .youtub-logo {
+                width: 110px;
+                float: left;
+                padding-left: 11px;
+                margin-top: -9px;
+                transform: translateX(25px) translateY(-41px);
+            }
+
+
+
+            .search-logo {
+                width: 41px;
+                height: 35px;
+                background-color: rgb(36, 36, 36);
+                float: left;
+                margin-top: 10px;
+                margin-left: 342px;
+                border-radius: 25px;
+            }
+
+            .mice {
+                width: 37px;
+                height: 35px;
+                border-radius: 50%;
+                background-color: rgb(36, 36, 36);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                float: left;
+                margin-left: 1%;
+                margin-top: 7px;
+                transition: all 0.3s ease-in-out;
+            }
+
+            .mic {
+                width: 21px;
+                height: 20px;
+                float: left;
+            }
+
+            .mice:hover {
+                background-color: rgb(77, 77, 77);
+            }
+
+            .mick-box {
+                width: 34px;
+                height: 32px;
+                transition: all 0.3s ease-in-out;
+                border-radius: 23px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 9px;
+                margin-left: 7px;
+            }
+
+            .dot {
+                width: 10%;
+                height: 40px;
+
+                margin-left: 560px;
+            }
+
+            .dot3 {
+                width: 30px;
+                height: 40px;
+                margin-left: 50px;
+                margin-top: 6px;
+                float: left;
+            }
+
+            .bold {
+                color: #5985E1;
+                font-size: 15px;
+                transform: translateX(2px) translateX(-5px);
+            }
+
+            .user {
+                width: 24px;
+
+
+            }
+
+            .btn {
+                width: 94px;
+                background-color: transparent;
+                height: 35px;
+                border: 1px solid #555555;
+                border-radius: 25px;
+                float: left;
+                transform: translateX(91px) translateY(-38px);
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                transition: all 0.3s ease-in-out;
+            }
+
+            .btn:hover {
+                background-color: #5984e144;
+
+            }
+
+        
+
+        @media (min-width:768px) {
+
+
+            body {
+                background-color: #939393;
+            }
+
+            .youtub-logo {
+                width: 110px;
+                float: left;
+                padding-left: 10px;
+                margin-top: -14px;
+                transform: translateX(25px) translateY(-41px);
+            }
+
+            .menu {
+                width: 74%;
+                padding-left: -12px;
+                height: 28px;
+                float: left;
+                transform: translateX(-7.5px) translateY(0px);
+            }
+        }
+
+        @media (min-width:1024px) {
+
+            body {
+
+padding: 0px;
+margin: 0px;
+
+}
+footer {
+        width: 100%;
+        height: 60px;
+        background-color: blanchedalmond;
+    }
+
+nav {
+width: 100%;
+height: 50px;
+background-color: #0a0a0a;
+position: fixed;
+top: 0;
+z-index: 1000;
+
+
+
+}
+
+.line-search {
+width: 10%;
+height: 40px;
+
+float: left;
+}
+
+.menu {
+width: 80%;
+padding-left: 11px;
+height: 50px;
+float: left;
+transform: translateX(-4.5px) translateY(0px);
+}
+
+.youtub-logo {
+width: 128px;
+float: left;
+padding-left: 10px;
+margin-top: -14px;
+transform: translateX(45px) translateY(-46px);
+}
+
+.main {
+display: flex;
+justify-content: center;
+float: left;
+
+}
+
+.search {
+width: 550px;
+height: 40px;
+background-color: rgb(43, 43, 43);
+border-radius: 25px;
+display: flex;
+margin-left: 450px;
+margin-top: 3px;
+overflow: hidden;
+border: 2px solid rgb(43, 43, 43);
+float: left;
+}
+
+.inupt {
+width: 88%;
+height: 40px;
+outline: none;
+border: none;
+font-size: 19px;
+padding-left: 20px;
+background-color: rgb(7, 7, 7);
+color: rgb(255, 255, 255);
+border-top-left-radius: 25px;
+border-bottom-left-radius: 25px;
+float: left;
+
+}
+
+.search-logo {
+width: 65px;
+height: 40px;
+background-color: rgb(36, 36, 36);
+float: left;
+}
+
+.mice {
+width: 52px;
+height: 48px;
+border-radius: 50%;
+background-color: rgb(36, 36, 36);
+display: flex;
+align-items: center;
+justify-content: center;
+float: left;
+margin-left: 2%;
+margin-top: 1px;
+transition: all 0.3s ease-in-out;
+}
+
+.mice:hover {
+background-color: rgb(77, 77, 77);
+}
+
+.mic {
+width: 25px;
+height: 25px;
+float: left;
+}
+
+.dot {
+width: 10%;
+height: 40px;
+
+margin-left: 1718px;
+}
+
+.dot3 {
+width: 30px;
+height: 40px;
+margin-left: 30px;
+margin-top: 6px;
+float: left;
+}
+
+.bold {
+color: #5985E1;
+font-size: 15px;
+transform: translateX(0px) translateX(-5px);
+}
+
+.user {
+width: 30px;
+
+
+}
+
+.btn {
+width: 105px;
+background-color: transparent;
+height: 40px;
+border: 1px solid #555555;
+border-radius: 25px;
+float: left;
+transform: translateX(10px) translateY(5px);
+display: flex;
+align-items: center;
+justify-content: space-between;
+transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+background-color: #5984e144;
+
+}
+
+.mick-box {
+width: 47px;
+height: 42px;
+transition: all 0.3s ease-in-out;
+border-radius: 23px;
+display: flex;
+align-items: center;
+justify-content: center;
+margin-top: 4px;
+margin-left: 7px;
+}
+
+.mick-box:hover {
+background-color: rgb(58, 58, 58);
+
+}
+.wrapper {
+            width: 100%;
+            height: 2000px;
+            background-color: #0a0a0a;
+            display: flex;
+        }
+
+        .menu-box-2 {
+            width: 80px;
+            height: 950px;
+            background-color: #0a0a0a;
+            margin-top: 50px;
+            position: fixed;
+        }
+
+        .web-image-box-1 {
+
+            width: 63px;
+            height: 70px;
+
+            border-radius: 7px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin-bottom: 10px;
+            transition: all 0.3s ease-in-out;
+
+        }
+
+        .web-image-box-1:hover {
+            background-color: #3b3b3b;
+        }
+
+        .web-imgage-1 {
+            width: 30px;
+            margin-top: 19px;
+
+        }
+
+       
+
+        .web-imgage-2 {
+            width: 95px;
+            margin-top: 30px;
+
+
+        }
+        .home {
+            margin-top: 5px;
+            font-family: monospace;
+            color: aliceblue;
+        }
+
+        .shorts-name {
+
+            color: aliceblue;
+            font-family: monospace;
+            transform: translateX(0px) translateY(-32px);
+        }
+
+        .subscriptions {
+            color: aliceblue;
+            margin-top: 3px;
+            font-size: 10px;
+        }
+
+
+        .voide-menager-box {
+            width: 95%;
+            height: 350px;
+            /* background-color: #5985E1; */
+            float: left;
+
+            margin-top: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 75px;
+            overflow: hidden;
+            position: absolute;
+            margin-left: 76px;
+        }
+
+        .voide-box {
+            width: 23%;
+            height: 350px;
+            /* background-color: cadetblue; */
+        }
+
+        .vidio-box-vidio {
+            width: 100%;
+            height: 257px;
+            /* background-color: #15223d; */
+        }
+
+        .box-teax {
+            width: 100%;
+            height: 93px;
+            /* background-color: burlywood; */
+        }
+
+        .sonal-maa {
+            width: 100%;
+            height: 257px;
+        }
+
+        .heding-vidio-teax {
+            margin-top: 0px;
+            margin-bottom: 0px;
+            font-size: 18px;
+            font-family: sans-serif;
+            font-weight: 600;
+            color: aliceblue;
+        }
+
+        .teax-vidio-teax {
+            font-family: system-ui;
+            color: #979797;
+        }
+
+
+        /* fdffffffffffffffff */
+
+
+
+
+        .voide-menager-box-2 {
+            width: 95%;
+            height: 350px;
+
+            float: left;
+            margin-top: 460px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 75px;
+            overflow: hidden;
+            position: absolute;
+            margin-left: 76px;
+        }
+
+        .voide-box-2 {
+            width: 23%;
+            height: 350px;
+
+        }
+
+        .vidio-box-vidio-2 {
+            width: 100%;
+            height: 257px;
+
+
+        }
+
+        .box-teax-2 {
+            width: 100%;
+            height: 93px;
+
+        }
+
+        .sonal-maa-2 {
+            width: 100%;
+            height: 257px;
+
+        }
+
+        .heding-vidio-teax-2 {
+            margin-top: 0px;
+            margin-bottom: 0px;
+            font-size: 18px;
+            font-family: sans-serif;
+            font-weight: 600;
+            color: aliceblue;
+        }
+
+        .teax-vidio-teax-2 {
+            font-family: system-ui;
+            color: #979797;
+        }
+
+
+        /* ssssssssssssssssssssssssssssssssssssssssssssssssss */
+
+
+
+        .voide-menager-box-3 {
+            width: 95%;
+            height: 350px;
+            float: left;
+            margin-top: 840px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 75px;
+            overflow: hidden;
+            position: absolute;
+            margin-left: 76px;
+        }
+
+        .voide-box-3 {
+            width: 23%;
+            height: 350px;
+
+        }
+
+        .vidio-box-vidio-3 {
+            width: 100%;
+            height: 257px;
+
+
+        }
+
+        .box-teax-3 {
+            width: 100%;
+            height: 93px;
+
+        }
+
+        .sonal-maa-3 {
+            width: 100%;
+            height: 257px;
+
+        }
+
+        .heding-vidio-teax-3 {
+            margin-top: 0px;
+            margin-bottom: 0px;
+            font-size: 18px;
+            font-family: sans-serif;
+            font-weight: 600;
+            color: aliceblue;
+        }
+
+        .teax-vidio-teax-3 {
+            font-family: system-ui;
+            color: #979797;
+        }
+
+
+        /* 11111111111111111111111111111111111111111111111111111111111111 */
+
+
+
+
+        .voide-menager-box-4 {
+            width: 95%;
+            height: 350px;
+            float: left;
+            margin-top: 1224px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 75px;
+            overflow: hidden;
+            position: absolute;
+            margin-left: 76px;
+        }
+
+        .voide-box-4 {
+            width: 23%;
+            height: 350px;
+
+        }
+
+        .vidio-box-vidio-4 {
+            width: 100%;
+            height: 257px;
+
+
+        }
+
+        .box-teax-4 {
+            width: 100%;
+            height: 93px;
+
+        }
+
+        .sonal-maa-4 {
+            width: 100%;
+            height: 257px;
+
+        }
+
+        .heding-vidio-teax-4 {
+            margin-top: 0px;
+            margin-bottom: 0px;
+            font-size: 18px;
+            font-family: sans-serif;
+            font-weight: 600;
+            color: aliceblue;
+        }
+
+        .teax-vidio-teax-4 {
+            font-family: system-ui;
+            color: #979797;
+        }
+
+
+        /* 1111111111111111111111111111111111111111111111111111111111111111111 */
+
+
+
+        .voide-menager-box-5 {
+            width: 95%;
+            height: 350px;
+            float: left;
+            margin-top: 1604px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 75px;
+            overflow: hidden;
+            position: absolute;
+            margin-left: 76px;
+        }
+
+        .voide-box-5 {
+            width: 23%;
+            height: 350px;
+
+        }
+
+        .vidio-box-vidio-5 {
+            width: 100%;
+            height: 257px;
+
+
+        }
+
+        .box-teax-5 {
+            width: 100%;
+            height: 93px;
+
+        }
+
+        .sonal-maa-5 {
+            width: 100%;
+            height: 257px;
+
+        }
+
+        .heding-vidio-teax-5 {
+            margin-top: 0px;
+            margin-bottom: 0px;
+            font-size: 18px;
+            font-family: sans-serif;
+            font-weight: 600;
+            color: aliceblue;
+        }
+
+        .teax-vidio-teax-5 {
+            font-family: system-ui;
+            color: #979797;
+        }
+
+        }
+
+
+
+       
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="line-search">
+            <div class="line">
+                <div class="mick-box">
+                    <img src="./image/manu.svg" class="menu">
+                </div>
+                <img src="./image/youtube,logo.png" class="youtub-logo">
+            </div>
+
+        </div>
+
+        <div class="main">
+            <div class="search">
+                <input type="search" class="inupt" placeholder="Search">
+                <img src="./image/srach2.svg" class="search-logo" height="100%" width="100%">
+            </div>
+        </div>
+
+        <div class="mice">
+            <img src="./image/youtube-mic.png" class="mic">
+        </div>
+
+        <div class="dot">
+            <img src="./image/3dot.svg" class="dot3">
+            <a
+                href="https://accounts.google.com/InteractiveLogin/signinchooser?continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den%26next%3Dhttps%253A%252F%252Fwww.youtube.com%252F&ec=65620&hl=en&passive=true&service=youtube&uilel=3&ifkv=AdF4I76XYeT8UruQRo58vtE0GYXQQcxdapBZ2Vt2jfhQ2dRSv2Pgx7NhmQe4iYNNG5fQOmYVRp_tDw&ddm=0&flowName=GlifWebSignIn&flowEntry=ServiceLogin"><button
+                    class="btn"><img src="./image/user.svg" class="user"> <b class="bold"> Sign in</b> </button></a>
+        </div>
+
+    </nav>
+
+    <div class="wrapper">
+        <div class="menu-box-2">
+            <div class="web-image-box-1">
+                <img src="https://static-00.iconduck.com/assets.00/house-home-icon-512x512-peft83jj.png"
+                    class="web-imgage-1">
+                <p class="home">Home</p>
+            </div>
+            <div class="web-image-box-1">
+                <a href="https://www.youtube.com/shorts/J6Fu0OmLEtM"><img src="./image/shorts2.png"
+                        class="web-imgage-2"></a>
+                <p class="shorts-name">Shorts</p>
+            </div>
+            <div class="web-image-box-1">
+                <a href="https://www.youtube.com/feed/subscriptions"> <img src="./image/subscriptions.svg"
+                        class="web-imgage-1"></a>
+                <p class="subscriptions">Subscriptions</p>
+            </div>
+            <div class="web-image-box-1">
+                <a href="https://www.youtube.com/feed/you"> <img src="./image/you.svg" class="web-imgage-1"></a>
+                <p class="home">You</p>
+            </div>
+            <div class="web-image-box-1">
+                <a href="https://www.youtube.com/feed/history"> <img src="./image/history.svg" class="web-imgage-1"></a>
+                <p class="home">History</p>
+            </div>
+        </div>
+        <div class="voide-menager-box">
+            <div class="voide-box">
+                <div class="vidio-box-vidio">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/OH7zsuwNC4k?si=KuunCXdXycP2uEu7"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="sonal-maa"></iframe>
+                </div>
+                <div class="box-teax">
+                    <h2 class="heding-vidio-teax">Mix - PANKH MANE DIDHI HOT TO SONAL | પાંખ મને દીધી હોત તો માં સોનલ |
+                        SHEKHAR GADHVI
+                    </h2>
+                    <p class="teax-vidio-teax"> Shekhar Gadhvi, Vishaldan Gadhavi, Pintu Algotar, and more</p>
+                </div>
+            </div>
+            <div class="voide-box">
+                <div class="vidio-box-vidio">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/1lnptyXgEc4?si=1hX0se2Ndg-FsC8-"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="sonal-maa"></iframe>
+                </div>
+                <div class="box-teax">
+                    <h2 class="heding-vidio-teax">Mix - PANKH MANE DIDHI HOT TO SONAL | પાંખ મને દીધી હોત તો માં સોનલ |
+                        SHEKHAR GADHVI
+                    </h2>
+                    <p class="teax-vidio-teax"> Shekhar Gadhvi, Vishaldan Gadhavi, Pintu Algotar, and more</p>
+                </div>
+            </div>
+            <div class="voide-box">
+                <div class="vidio-box-vidio">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/2lLwaDK7mEs?si=bo6WBNdIIt30_vcY"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="sonal-maa"></iframe>
+                </div>
+                <div class="box-teax">
+                    <h2 class="heding-vidio-teax">Mix - PANKH MANE DIDHI HOT TO SONAL | પાંખ મને દીધી હોત તો માં સોનલ |
+                        SHEKHAR GADHVI
+                    </h2>
+                    <p class="teax-vidio-teax"> Shekhar Gadhvi, Vishaldan Gadhavi, Pintu Algotar, and more</p>
+                </div>
+            </div>
+            <div class="voide-box">
+                <div class="vidio-box-vidio">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/h-X3c3v7pHo?si=K2aPWvT_P4vauknF"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="sonal-maa"></iframe>
+                </div>
+                <div class="box-teax">
+                    <h2 class="heding-vidio-teax">Mix - PANKH MANE DIDHI HOT TO SONAL | પાંખ મને દીધી હોત તો માં સોનલ |
+                        SHEKHAR GADHVI
+                    </h2>
+                    <p class="teax-vidio-teax"> Shekhar Gadhvi, Vishaldan Gadhavi, Pintu Algotar, and more</p>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- sdaiyfgvaiodhycgioabcdi -->
+
+        <div class="voide-menager-box-2">
+            <div class="voide-box-2">
+                <div class="vidio-box-vidio-2">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/RyDtS7QkzMM?si=1g-xrDqvZhYh6SoT"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="sonal-maa"></iframe>
+                </div>
+                <div class="box-teax-2">
+                    <h2 class="heding-vidio-teax-2">Mix - PANKH MANE DIDHI HOT TO SONAL | પાંખ મને દીધી હોત તો માં સોનલ
+                        |
+                        SHEKHAR GADHVI
+                    </h2>
+                    <p class="teax-vidio-teax-2"> Shekhar Gadhvi, Vishaldan Gadhavi, Pintu Algotar, and more</p>
+                </div>
+            </div>
+            <div class="voide-box">
+                <div class="vidio-box-vidio">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/cpKolP6mMec?si=BUw1NaH3SNxHGfoW"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="sonal-maa"></iframe>
+                </div>
+                <div class="box-teax">
+                    <h2 class="heding-vidio-teax">Mix - PANKH MANE DIDHI HOT TO SONAL | પાંખ મને દીધી હોત તો માં સોનલ |
+                        SHEKHAR GADHVI
+                    </h2>
+                    <p class="teax-vidio-teax"> Shekhar Gadhvi, Vishaldan Gadhavi, Pintu Algotar, and more</p>
+                </div>
+            </div>
+            <div class="voide-box">
+                <div class="vidio-box-vidio">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/-6oAZwTGD2c?si=7aPn0wbH7o4oO0rB"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="sonal-maa"></iframe>
+                </div>
+                <div class="box-teax">
+                    <h2 class="heding-vidio-teax">Mix - PANKH MANE DIDHI HOT TO SONAL | પાંખ મને દીધી હોત તો માં સોનલ |
+                        SHEKHAR GADHVI
+                    </h2>
+                    <p class="teax-vidio-teax"> Shekhar Gadhvi, Vishaldan Gadhavi, Pintu Algotar, and more</p>
+                </div>
+            </div>
+            <div class="voide-box">
+                <div class="vidio-box-vidio">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/XKimvWC1K3M?si=EJp9FAX7gMy6XutX"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="sonal-maa"></iframe>
+                </div>
+                <div class="box-teax">
+                    <h2 class="heding-vidio-teax">Mix - PANKH MANE DIDHI HOT TO SONAL | પાંખ મને દીધી હોત તો માં સોનલ |
+                        SHEKHAR GADHVI
+                    </h2>
+                    <p class="teax-vidio-teax"> Shekhar Gadhvi, Vishaldan Gadhavi, Pintu Algotar, and more</p>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- fdgssssdjiufbnhgfdoji -->
+
+
+
+        <div class="voide-menager-box-3">
+            <div class="voide-box-3">
+                <div class="vidio-box-vidio-3">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/cWvfUXVdOPU?si=dVups1ttONpfOlFc"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="sonal-maa"></iframe>
+                </div>
+                <div class="box-teax-3">
+                    <h2 class="heding-vidio-teax-3">Mix - PANKH MANE DIDHI HOT TO SONAL | પાંખ મને દીધી હોત તો માં સોનલ
+                        |
+                        SHEKHAR GADHVI
+                    </h2>
+                    <p class="teax-vidio-teax-3"> Shekhar Gadhvi, Vishaldan Gadhavi, Pintu Algotar, and more</p>
+                </div>
+            </div>
+            <div class="voide-box">
+                <div class="vidio-box-vidio">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/yLI2k4Ffc8M?si=7_YruRXyRpkxluua"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="sonal-maa"></iframe>
+                </div>
+                <div class="box-teax">
+                    <h2 class="heding-vidio-teax">Mix - PANKH MANE DIDHI HOT TO SONAL | પાંખ મને દીધી હોત તો માં સોનલ |
+                        SHEKHAR GADHVI
+                    </h2>
+                    <p class="teax-vidio-teax"> Shekhar Gadhvi, Vishaldan Gadhavi, Pintu Algotar, and more</p>
+                </div>
+            </div>
+            <div class="voide-box">
+                <div class="vidio-box-vidio">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/nYKHAg-OUJE?si=ItGT1_hTxABOuuta"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="sonal-maa"></iframe>
+                </div>
+                <div class="box-teax">
+                    <h2 class="heding-vidio-teax">Mix - PANKH MANE DIDHI HOT TO SONAL | પાંખ મને દીધી હોત તો માં સોનલ |
+                        SHEKHAR GADHVI
+                    </h2>
+                    <p class="teax-vidio-teax"> Shekhar Gadhvi, Vishaldan Gadhavi, Pintu Algotar, and more</p>
+                </div>
+            </div>
+            <div class="voide-box">
+                <div class="vidio-box-vidio">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/YOBbljr1Xpg?si=tKgvjeuBNdlCn3mx"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="sonal-maa"></iframe>
+                </div>
+                <div class="box-teax">
+                    <h2 class="heding-vidio-teax">Mix - PANKH MANE DIDHI HOT TO SONAL | પાંખ મને દીધી હોત તો માં સોનલ |
+                        SHEKHAR GADHVI
+                    </h2>
+                    <p class="teax-vidio-teax"> Shekhar Gadhvi, Vishaldan Gadhavi, Pintu Algotar, and more</p>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- llllllllllllllllllllllllllllllllllllll -->
+
+
+
+
+        <div class="voide-menager-box-4">
+            <div class="voide-box-4">
+                <div class="vidio-box-vidio-4">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/hHuG7FIKgtc?si=W2OqzP1VJfFZgOzp"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="sonal-maa"></iframe>
+                </div>
+                <div class="box-teax-4">
+                    <h2 class="heding-vidio-teax-4">Mix - PANKH MANE DIDHI HOT TO SONAL | પાંખ મને દીધી હોત તો માં સોનલ
+                        |
+                        SHEKHAR GADHVI
+                    </h2>
+                    <p class="teax-vidio-teax-4"> Shekhar Gadhvi, Vishaldan Gadhavi, Pintu Algotar, and more</p>
+                </div>
+            </div>
+            <div class="voide-box">
+                <div class="vidio-box-vidio">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/yIR76Q3InbY?si=xUgryOEZ4__eDtYT"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="sonal-maa"></iframe>
+                </div>
+                <div class="box-teax">
+                    <h2 class="heding-vidio-teax">Mix - PANKH MANE DIDHI HOT TO SONAL | પાંખ મને દીધી હોત તો માં સોનલ |
+                        SHEKHAR GADHVI
+                    </h2>
+                    <p class="teax-vidio-teax"> Shekhar Gadhvi, Vishaldan Gadhavi, Pintu Algotar, and more</p>
+                </div>
+            </div>
+            <div class="voide-box">
+                <div class="vidio-box-vidio">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/46f6aPSXN7Y?si=9nHpBTRA4Ie7ZY3b"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="sonal-maa"></iframe>
+                </div>
+                <div class="box-teax">
+                    <h2 class="heding-vidio-teax">Mix - PANKH MANE DIDHI HOT TO SONAL | પાંખ મને દીધી હોત તો માં સોનલ |
+                        SHEKHAR GADHVI
+                    </h2>
+                    <p class="teax-vidio-teax"> Shekhar Gadhvi, Vishaldan Gadhavi, Pintu Algotar, and more</p>
+                </div>
+            </div>
+            <div class="voide-box">
+                <div class="vidio-box-vidio">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/kavQ-QLdmWw?si=muKeZlJzHxYMI3M_"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="sonal-maa"></iframe>
+                </div>
+                <div class="box-teax">
+                    <h2 class="heding-vidio-teax">Mix - PANKH MANE DIDHI HOT TO SONAL | પાંખ મને દીધી હોત તો માં સોનલ |
+                        SHEKHAR GADHVI
+                    </h2>
+                    <p class="teax-vidio-teax"> Shekhar Gadhvi, Vishaldan Gadhavi, Pintu Algotar, and more</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 11111111111111111111111111111111111111111111111111111 -->
+
+
+
+        <div class="voide-menager-box-5">
+            <div class="voide-box-5">
+                <div class="vidio-box-vidio-5">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/cWvfUXVdOPU?si=dVups1ttONpfOlFc"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="sonal-maa"></iframe>
+                </div>
+                <div class="box-teax-5">
+                    <h2 class="heding-vidio-teax-5">Mix - PANKH MANE DIDHI HOT TO SONAL | પાંખ મને દીધી હોત તો માં સોનલ
+                        |
+                        SHEKHAR GADHVI
+                    </h2>
+                    <p class="teax-vidio-teax-5"> Shekhar Gadhvi, Vishaldan Gadhavi, Pintu Algotar, and more</p>
+                </div>
+            </div>
+            <div class="voide-box">
+                <div class="vidio-box-vidio">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/yLI2k4Ffc8M?si=7_YruRXyRpkxluua"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="sonal-maa"></iframe>
+                </div>
+                <div class="box-teax">
+                    <h2 class="heding-vidio-teax">Mix - PANKH MANE DIDHI HOT TO SONAL | પાંખ મને દીધી હોત તો માં સોનલ |
+                        SHEKHAR GADHVI
+                    </h2>
+                    <p class="teax-vidio-teax"> Shekhar Gadhvi, Vishaldan Gadhavi, Pintu Algotar, and more</p>
+                </div>
+            </div>
+            <div class="voide-box">
+                <div class="vidio-box-vidio">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/nYKHAg-OUJE?si=ItGT1_hTxABOuuta"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="sonal-maa"></iframe>
+                </div>
+                <div class="box-teax">
+                    <h2 class="heding-vidio-teax">Mix - PANKH MANE DIDHI HOT TO SONAL | પાંખ મને દીધી હોત તો માં સોનલ |
+                        SHEKHAR GADHVI
+                    </h2>
+                    <p class="teax-vidio-teax"> Shekhar Gadhvi, Vishaldan Gadhavi, Pintu Algotar, and more</p>
+                </div>
+            </div>
+            <div class="voide-box">
+                <div class="vidio-box-vidio">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/YOBbljr1Xpg?si=tKgvjeuBNdlCn3mx"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="sonal-maa"></iframe>
+                </div>
+                <div class="box-teax">
+                    <h2 class="heding-vidio-teax">Mix - PANKH MANE DIDHI HOT TO SONAL | પાંખ મને દીધી હોત તો માં સોનલ |
+                        SHEKHAR GADHVI
+                    </h2>
+                    <p class="teax-vidio-teax"> Shekhar Gadhvi, Vishaldan Gadhavi, Pintu Algotar, and more</p>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <!-- <footer>
+        <div class="web-image-footar-1">
+            <img src="https://static-00.iconduck.com/assets.00/house-home-icon-512x512-peft83jj.png"
+                class="web-footer-imgage-1">
+            <p class="home">Home</p>
+        </div>
+        <div class="web-image-footar-1">
+            <a href="https://www.youtube.com/shorts/J6Fu0OmLEtM"><img src="./image/shorts2.png"
+                    class="web-footer-imgage-1"></a>
+            <p class="shorts-name">Shorts</p>
+        </div>
+        <div class="web-image-footar-1">
+            <a href="https://www.youtube.com/feed/subscriptions"> <img src="./image/subscriptions.svg"
+                    class="web-footer-imgage-1"></a>
+            <p class="subscriptions">Subscriptions</p>
+        </div>
+        <div class="web-image-footar-1">
+            <a href="https://www.youtube.com/feed/you"> <img src="./image/you.svg" class="web-footer-imgage-1"></a>
+            <p class="home">You</p>
+        </div>
+        <div class="web-image-footar-1">
+            <a href="https://www.youtube.com/feed/history"> <img src="./image/history.svg" class="web-footer-imgage-1"></a>
+            <p class="home">History</p>
+        </div>
+    </footer> -->
+
+</body>
+
+</html>
